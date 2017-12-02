@@ -2,8 +2,8 @@ const assert = require('assert');
 
 const simpleSearch = (list, item)=> {
     console.time('Simple search');
-    let iterations;
-    for(literations = 0; iterations <= list.length; iterations++) {
+    var iterations;
+    for(iterations = 0; iterations <= list.length; iterations++) {
         if(list[iterations] === item) {
             console.timeEnd('Simple search');
             return {
@@ -35,4 +35,4 @@ assert.equal(result.iterations, 5);
 
 result = simpleSearch(list, 9);
 assert.equal(result.item, false);
-assert.equal(result.iterations, 8);
+assert.equal(result.iterations, 9);
