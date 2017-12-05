@@ -1,7 +1,6 @@
 const assert = require('assert')
 
 const sum = (arr) => {
-    let finalSum = 0; 
     if(arr.length === 1) {
         return arr[0];
     } else {
