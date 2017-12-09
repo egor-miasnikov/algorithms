@@ -8,7 +8,7 @@ const quickSort = (list) => {
     const pivot = list[0];
     const less = list.slice(1).filter(key => key <= pivot);
     const greater = list.slice(1).filter(key => key > pivot);
-    
+
     return [...quickSort(less), pivot, ...quickSort(greater)];
 }
 
